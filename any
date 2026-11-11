@@ -1,0 +1,20 @@
+class Student {
+   int rollNo;
+   String name;
+   static String college = "GFG"; // shared by all
+   Student {
+       rollNo = r;
+       name = n;
+   }
+   void display() {
+       System.out.println(rollNo  college);
+   }
+}
+public class Main {
+   public static void main(String[] args) {
+       Student s1 = new Student(101, "Ravi");
+       Student s2 = new Student(102, "Amit");
+       s1.display();
+       s2.display();
+   }
+}
